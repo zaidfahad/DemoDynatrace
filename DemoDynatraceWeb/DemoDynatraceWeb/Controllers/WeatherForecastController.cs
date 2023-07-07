@@ -24,7 +24,7 @@ namespace DemoDynatraceWeb.Controllers
          readonly string CustomerId = "c8d966dc-16cd-42ce-b003-b199a5472dc4";
 
         // For sharedKey, use either the primary or the secondary Connected Sources client authentication key   
-         readonly string SharedKey = "2dHx1O2AuTempIXXCX5VGDkRWZavFSM/Ge3h7kuWn5L2t4YT3fO8qp6q23sqqZzQuahgabhhzxwcyOO9Y35AXPw==";
+         readonly string SharedKey = "dHx1O2AuTempIXXCX5VGDkRWZavFSM/Ge3h7kuWn5L2t4YT3fO8qp6q23sqqZzQuahgabhhzxwcyOO9Y35AXPw==";
 
         // LogName is name of the event type that is being submitted to Azure Monitor
          readonly string LogName = "DyatraceLog";
