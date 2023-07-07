@@ -78,9 +78,37 @@ namespace ConsoleApp2
                 string result = responseContent.ReadAsStringAsync().Result;
                 Console.WriteLine("Return Result: " + result);
             }
-            catch (Exception excep)
+            catch (Exception ex)
             {
-                Console.WriteLine("API Post Exception: " + excep.Message);
+                Console.WriteLine("API Post Exception: " + ex.Message);
+            }
+        }
+
+        public static void PostDataDynatrace(string signature, string date, string json)
+        {
+            try
+            {
+                string url = "https://" + CustomerId + ".ods.opinsights.azure.com/api/logs?api-version=2016-04-01";
+
+                System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+                client.DefaultRequestHeaders.Add("Log-Type", LogName);
+                client.DefaultRequestHeaders.Add("Authorization", signature);
+                client.DefaultRequestHeaders.Add("x-ms-date", date);
+                client.DefaultRequestHeaders.Add("time-generated-field", TimeStampField);
+
+                // If charset=utf-8 is part of the content-type header, the API call may return forbidden.
+                System.Net.Http.HttpContent httpContent = new StringContent(json, Encoding.UTF8);
+                httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                Task<System.Net.Http.HttpResponseMessage> response = client.PostAsync(new Uri(url), httpContent);
+
+                System.Net.Http.HttpContent responseContent = response.Result.Content;
+                string result = responseContent.ReadAsStringAsync().Result;
+                Console.WriteLine("Return Result: " + result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("API Post Exception: " + ex.Message);
             }
         }
     }
