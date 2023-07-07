@@ -11,3 +11,4 @@ D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.
 D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.1\ConsoleApp2.dll
 D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.1\ConsoleApp2.pdb
 D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.1\ConsoleApp2.genruntimeconfig.cache
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp2.1\Settings.job

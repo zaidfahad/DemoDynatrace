@@ -1,44 +1,41 @@
 ﻿using System;
-using System.IO;
-using System.Net;
-using System.Net.Http.Headers;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace ConsoleApp2
 {
     internal class Program
     {
         // An example JSON object, with key/value pairs
-        static string json = @"[{""DemoField1"":""DemoValue1"",""DemoField2"":""DemoValue2""},{""DemoField3"":""DemoValue3"",""DemoField4"":""DemoValue4""}]";
+        static readonly string Json = @"[{""Name"":""Zaid"",""DemoField2"":""Khan""},{""DemoField3"":""Cloud Expert"",""DemoField4"":""Indian""}]";
 
         // Update customerId to your Log Analytics workspace ID
-        static string customerId = "f68788d2-0dc0-430d-b9d2-78fab0c70399";
+        static readonly string CustomerId = "f68788d2-0dc0-430d-b9d2-78fab0c70399";
 
         // For sharedKey, use either the primary or the secondary Connected Sources client authentication key   
-        static string sharedKey = "2Cv8Yj8PXkii9/oWUGfrZhyPu2+7BhCx/oQsnZhORCbqwgSYtMAPIJqiNVu115a/Xw+Nuw+dgqPIgquV5GfcYw==";
+        static readonly string SharedKey = "2Cv8Yj8PXkii9/oWUGfrZhyPu2+7BhCx/oQsnZhORCbqwgSYtMAPIJqiNVu115a/Xw+Nuw+dgqPIgquV5GfcYw==";
 
         // LogName is name of the event type that is being submitted to Azure Monitor
-        static string LogName = "AppServiceAppLogs";
+        static readonly string LogName = "DyatraceLog";
 
         // You can use an optional field to specify the timestamp from the data. If the time field is not specified, Azure Monitor assumes the time is the message ingestion time
-        static string TimeStampField = "";
-       // DateTime dt = new DateTime();
+        static readonly string TimeStampField = DateTime.UtcNow.ToString("r");
+        // DateTime dt = new DateTime();
         static void Main()
         {
             bool test = true;
             // Create a hash for the API signature
-            var datestring = TimeStampField= DateTime.UtcNow.ToString("r");
-            var jsonBytes = Encoding.UTF8.GetBytes(json);
+            string datestring  = DateTime.UtcNow.ToString("r");
+            var jsonBytes = Encoding.UTF8.GetBytes(Json);
             string stringToHash = "POST\n" + jsonBytes.Length + "\napplication/json\n" + "x-ms-date:" + datestring + "\n/api/logs";
-            string hashedString = BuildSignature(stringToHash, sharedKey);
-            string signature = "SharedKey " + customerId + ":" + hashedString;
+            string hashedString = BuildSignature(stringToHash, SharedKey);
+            string signature = "SharedKey " + CustomerId + ":" + hashedString;
             //while (test)
             //{
-                PostData(signature, datestring, json);
+            PostData(signature, datestring, Json);
             //}
         }
         private static void TimerCallback(Object o)
@@ -63,7 +60,7 @@ namespace ConsoleApp2
         {
             try
             {
-                string url = "https://" + customerId + ".ods.opinsights.azure.com/api/logs?api-version=2016-04-01";
+                string url = "https://" + CustomerId + ".ods.opinsights.azure.com/api/logs?api-version=2016-04-01";
 
                 System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
                 client.DefaultRequestHeaders.Add("Accept", "application/json");
