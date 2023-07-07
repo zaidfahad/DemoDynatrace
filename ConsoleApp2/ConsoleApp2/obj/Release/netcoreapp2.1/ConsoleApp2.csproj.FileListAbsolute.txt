@@ -1,0 +1,14 @@
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\bin\Release\netcoreapp2.1\Settings.job
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\bin\Release\netcoreapp2.1\ConsoleApp2.deps.json
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\bin\Release\netcoreapp2.1\ConsoleApp2.runtimeconfig.json
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\bin\Release\netcoreapp2.1\ConsoleApp2.runtimeconfig.dev.json
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\bin\Release\netcoreapp2.1\ConsoleApp2.dll
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\bin\Release\netcoreapp2.1\ConsoleApp2.pdb
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.csproj.AssemblyReference.cache
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.AssemblyInfoInputs.cache
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.AssemblyInfo.cs
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.csproj.CoreCompileInputs.cache
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.dll
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.pdb
+D:\Zaid\TestProject\DemoDynatrace\ConsoleApp2\ConsoleApp2\obj\Release\netcoreapp2.1\ConsoleApp2.genruntimeconfig.cache

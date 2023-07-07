@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mOLfVAt8vaqgHBRKRI/3DYORGYu3naVGexOhCENwuoU=",
+  "Source": "DemoDynatrace",
+  "BasePath": "_content/DemoDynatrace",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
