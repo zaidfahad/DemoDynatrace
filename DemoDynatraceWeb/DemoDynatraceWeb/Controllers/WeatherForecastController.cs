@@ -21,10 +21,10 @@ namespace DemoDynatraceWeb.Controllers
          readonly string Json = @"[{""Name"":""Zaid"",""DemoField2"":""Khan""},{""DemoField3"":""Cloud Expert"",""DemoField4"":""Indian""}]";
 
         // Update customerId to your Log Analytics workspace ID
-         readonly string CustomerId = "f68788d2-0dc0-430d-b9d2-78fab0c70399";
+         readonly string CustomerId = "c8d966dc-16cd-42ce-b003-b199a5472dc4";
 
         // For sharedKey, use either the primary or the secondary Connected Sources client authentication key   
-         readonly string SharedKey = "2Cv8Yj8PXkii9/oWUGfrZhyPu2+7BhCx/oQsnZhORCbqwgSYtMAPIJqiNVu115a/Xw+Nuw+dgqPIgquV5GfcYw==";
+         readonly string SharedKey = "2dHx1O2AuTempIXXCX5VGDkRWZavFSM/Ge3h7kuWn5L2t4YT3fO8qp6q23sqqZzQuahgabhhzxwcyOO9Y35AXPw==";
 
         // LogName is name of the event type that is being submitted to Azure Monitor
          readonly string LogName = "DyatraceLog";
