@@ -21,10 +21,10 @@ namespace DemoDynatraceWeb.Controllers
          readonly string Json = @"[{""Name"":""Zaid"",""DemoField2"":""Khan""},{""DemoField3"":""Cloud Expert"",""DemoField4"":""Indian""}]";
 
         // Update customerId to your Log Analytics workspace ID
-         readonly string CustomerId = "c8d966dc-16cd-42ce-b003-b199a5472dc4";
+         readonly string CustomerId = "4fd4d0da-26bc-4bc3-a471-36663f691f55";
 
         // For sharedKey, use either the primary or the secondary Connected Sources client authentication key   
-         readonly string SharedKey = "dHx1O2AuTempIXXCX5VGDkRWZavFSM/Ge3h7kuWn5L2t4YT3fO8qp6q23sqqZzQuahgabhhzxwcyOO9Y35AXPw==";
+         readonly string SharedKey = "zKPfjEnShLUXVBjObKuu3SBZKvmQwdXeSxdZFZGWcIpTHbx2s5FxlSQujFGdEY57nXMJiqfwD95QLYuN6BsOBQ==";
 
         // LogName is name of the event type that is being submitted to Azure Monitor
          readonly string LogName = "DyatraceLog";
@@ -96,9 +96,11 @@ namespace DemoDynatraceWeb.Controllers
             string stringToHash = "POST\n" + jsonBytes.Length + "\napplication/json\n" + "x-ms-date:" + datestring + "\n/api/logs";
             string hashedString = BuildSignature(stringToHash, SharedKey);
             string signature = "SharedKey " + CustomerId + ":" + hashedString;
-            //while (test)
-            //{
-            PostData(signature, datestring, Json);
+            while (test)
+            {
+                PostData(signature, datestring, Json);
+            }
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
