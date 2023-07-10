@@ -80,7 +80,8 @@ namespace DemoDynatraceWeb.Controllers
     
 
     #endregion
-public WeatherForecastController(ILogger<WeatherForecastController> logger)
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
         }
