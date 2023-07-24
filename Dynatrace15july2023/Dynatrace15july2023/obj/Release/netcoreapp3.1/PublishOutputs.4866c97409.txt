@@ -1,0 +1,7 @@
+D:\Zaid\TestProject\DemoDynatrace\DemoDynatrace\Dynatrace15july2023\Dynatrace15july2023\obj\Release\netcoreapp3.1\PubTmp\Out\Dynatrace15july2023.exe
+D:\Zaid\TestProject\DemoDynatrace\DemoDynatrace\Dynatrace15july2023\Dynatrace15july2023\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\Zaid\TestProject\DemoDynatrace\DemoDynatrace\Dynatrace15july2023\Dynatrace15july2023\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\Zaid\TestProject\DemoDynatrace\DemoDynatrace\Dynatrace15july2023\Dynatrace15july2023\obj\Release\netcoreapp3.1\PubTmp\Out\Dynatrace15july2023.dll
+D:\Zaid\TestProject\DemoDynatrace\DemoDynatrace\Dynatrace15july2023\Dynatrace15july2023\obj\Release\netcoreapp3.1\PubTmp\Out\Dynatrace15july2023.deps.json
+D:\Zaid\TestProject\DemoDynatrace\DemoDynatrace\Dynatrace15july2023\Dynatrace15july2023\obj\Release\netcoreapp3.1\PubTmp\Out\Dynatrace15july2023.runtimeconfig.json
+D:\Zaid\TestProject\DemoDynatrace\DemoDynatrace\Dynatrace15july2023\Dynatrace15july2023\obj\Release\netcoreapp3.1\PubTmp\Out\Dynatrace15july2023.pdb

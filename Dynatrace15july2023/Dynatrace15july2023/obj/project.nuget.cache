@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FWaubY8aAnDiMHNVrGPewV/luKhrkA/5686Mid1PJhuJTdxu4lruryIYd1qQIZBFJGNSBF36Bi6q/NgAN8FnZg==",
+  "dgSpecHash": "RCijowJ0qkJpyIhsuxwquLe/HAwpCBbNZk5muWErAkfnqVZuw4mQo0TY9FCNEulEvbYOPgUSwir3Z5rR386wLQ==",
   "success": true,
   "projectFilePath": "D:\\Zaid\\TestProject\\DemoDynatrace\\DemoDynatrace\\Dynatrace15july2023\\Dynatrace15july2023\\Dynatrace15july2023.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\khan_\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

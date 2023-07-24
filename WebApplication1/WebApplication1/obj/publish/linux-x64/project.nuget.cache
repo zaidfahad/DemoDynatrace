@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+UjSZZZNDQUyN9F08HUIBLzXK02tYK1mGciL1Wqmwmj0FkaaGXh8GfNbk5f/sh0Q8p9km15cUl3tzqfDTt56FQ==",
+  "success": true,
+  "projectFilePath": "D:\\Zaid\\TestProject\\DemoDynatrace\\DemoDynatrace\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\khan_\\.nuget\\packages\\microsoft.net.build.containers\\0.3.2\\microsoft.net.build.containers.0.3.2.nupkg.sha512",
+    "C:\\Users\\khan_\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512",
+    "C:\\Users\\khan_\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\3.1.32\\microsoft.netcore.app.runtime.linux-x64.3.1.32.nupkg.sha512",
+    "C:\\Users\\khan_\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\3.1.32\\microsoft.aspnetcore.app.runtime.linux-x64.3.1.32.nupkg.sha512",
+    "C:\\Users\\khan_\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\3.1.32\\microsoft.netcore.app.host.linux-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}
