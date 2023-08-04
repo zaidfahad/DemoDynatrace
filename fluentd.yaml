@@ -30,7 +30,7 @@ spec:
           mountPath: /var/log/
       containers:
       - name: fluentd
-        image: etpxalarmapiwebapi:dev
+        image: fluentd-s9ztk 
         imagePullPolicy: Always
         env:
         - name: FLUENT_UID
