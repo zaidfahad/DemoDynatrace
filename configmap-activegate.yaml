@@ -4,8 +4,8 @@ metadata:
   name: fluentd-ingest-configuration
   namespace: dynatrace
 data:
-  CLUSTER_ID: "5b12b8e8-3360-48fe-ae1a-237d13180b77"
-  INGEST_ENDPOINT: "https://fluentd-activegate:9999/e/dof15210/api/v2/logs/ingest"
+  CLUSTER_ID: " 3a3a3387-73a1-4b59-bb62-49799cf1960a"
+  INGEST_ENDPOINT: "https://fluentd-activegate:9999/e/swn55236/api/v2/logs/ingest"
   custom.properties: |
     [generic_ingest]
     disk_queue_path = /media/datastore/security-gateway/log-ingest-queue/
@@ -90,8 +90,8 @@ data:
     # Send to dynatrace log ingest
     <match kubernetes.**>
       @type dynatrace
-      active_gate_url "#{ENV['dof15210.apps.dynatrace.com']}"
-      api_token "#{ENV['dt0c01.WENJSB27Q6CJUMNX4YIKV6AD.HWVCB7EIITT6U5AAW4HINTQLZ456CL7AORLDYHKFMVGALOBF7DTYONYHVDGLG5RK']}"
+      active_gate_url "#{ENV['INGEST_ENDPOINT']}"
+      api_token "#{ENV['LOG_INGEST_TOKEN']}"
       ssl_verify_none true
       <buffer>
         retry_max_times 3

@@ -77,7 +77,7 @@ spec:
           mountPath: /media/datastore/security-gateway/log-ingest-queue/
       containers:
       - name: activegate
-        image: dof15210.apps.dynatrace.com/linux/activegate
+        image: swn55236.live.dynatrace.com/linux/activegate
         imagePullPolicy: Always
         ports:
         - containerPort: 9999
@@ -88,7 +88,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: fluentd-ingest-configuration
-              key: CLUSTER_ID
+              key:  3a3a3387-73a1-4b59-bb62-49799cf1960a
         args:
         - --enable=log_analytics_collector
         livenessProbe:
