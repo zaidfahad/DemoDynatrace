@@ -4,8 +4,8 @@ metadata:
   name: fluentd-ingest-configuration
   namespace: dynatrace
 data:
-  CLUSTER_ID: "5b12b8e8-3360-48fe-ae1a-237d13180b77"
-  INGEST_ENDPOINT: "https://dof15210.live.dynatrace.com/api/v2/logs/ingest"
+  CLUSTER_ID: "${YOUR_CLUSTER_ID}"
+  INGEST_ENDPOINT: "https://swn55236.live.dynatrace.com/api/v2/logs/ingest"
   fluent.conf: |
     <label @FLUENT_LOG>
         <match fluent.**>
