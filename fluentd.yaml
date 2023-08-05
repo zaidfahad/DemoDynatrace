@@ -30,7 +30,7 @@ spec:
           mountPath: /var/log/
       containers:
       - name: fluentd
-        image: fluentd-s9ztk 
+        image: aksconatinerregistry.azurecr.io/zaiddynatrace:latest
         imagePullPolicy: Always
         env:
         - name: FLUENT_UID
