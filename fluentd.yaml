@@ -35,11 +35,11 @@ spec:
         env:
         - name: FLUENT_UID
           value: "0"
-        - name: 3a3a3387-73a1-4b59-bb62-49799cf1960a
+        - name: CLUSTER_ID
           valueFrom:
             configMapKeyRef:
               name: fluentd-ingest-configuration
-              key: 3a3a3387-73a1-4b59-bb62-49799cf1960a
+              key: CLUSTER_ID
         - name: INGEST_ENDPOINT
           valueFrom:
             configMapKeyRef:
