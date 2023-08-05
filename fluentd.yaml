@@ -30,16 +30,16 @@ spec:
           mountPath: /var/log/
       containers:
       - name: fluentd
-        image: aksconatinerregistry.azurecr.io/zaiddynatrace:latest
+        image: aksconatinerregistry.azurecr.io/webapplication2:latest
         imagePullPolicy: Always
         env:
         - name: FLUENT_UID
           value: "0"
-        - name: CLUSTER_ID
+        - name: 3a3a3387-73a1-4b59-bb62-49799cf1960a
           valueFrom:
             configMapKeyRef:
               name: fluentd-ingest-configuration
-              key: CLUSTER_ID
+              key: 3a3a3387-73a1-4b59-bb62-49799cf1960a
         - name: INGEST_ENDPOINT
           valueFrom:
             configMapKeyRef:
