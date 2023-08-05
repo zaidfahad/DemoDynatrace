@@ -39,7 +39,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: fluentd-ingest-configuration
-              key: 3a3a3387-73a1-4b59-bb62-49799cf1960a
+              key: "3a3a3387-73a1-4b59-bb62-49799cf1960a"
         - name: INGEST_ENDPOINT
           valueFrom:
             configMapKeyRef:
