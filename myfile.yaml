@@ -1,0 +1,7 @@
+<match dt.**>
+  @type              dynatrace
+  active_gate_url    https://swn55236.live.dynatrace.com:8021/e/swn55236/api/v2/logs/ingest
+  api_token          api_token
+  ssl_verify_none    false
+  inject_timestamp   false
+</match>
