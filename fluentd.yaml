@@ -30,7 +30,7 @@ spec:
           mountPath: /var/log/
       containers:
       - name: fluentd
-        image: fluentd-s9ztk 
+        image: fluent/fluentd-kubernetes-daemonset:v1.14-debian-forward-amd64-1
         imagePullPolicy: Always
         env:
         - name: FLUENT_UID

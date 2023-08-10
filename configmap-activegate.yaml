@@ -4,8 +4,8 @@ metadata:
   name: fluentd-ingest-configuration
   namespace: dynatrace
 data:
-  CLUSTER_ID: " 3a3a3387-73a1-4b59-bb62-49799cf1960a"
-  INGEST_ENDPOINT: "https://fluentd-activegate:9999/e/swn55236/api/v2/logs/ingest"
+  CLUSTER_ID: "83fe90ca-7007-416c-9232-07fcb9b31d57"
+  INGEST_ENDPOINT: "https://fluentd-activegate:9999/e/ncu51576/api/v2/logs/ingest"
   custom.properties: |
     [generic_ingest]
     disk_queue_path = /media/datastore/security-gateway/log-ingest-queue/
