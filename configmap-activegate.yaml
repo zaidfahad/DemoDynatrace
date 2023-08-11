@@ -4,7 +4,7 @@ metadata:
   name: fluentd-ingest-configuration
   namespace: dynatrace
 data:
-  CLUSTER_ID: "83fe90ca-7007-416c-9232-07fcb9b31d57"
+  CLUSTER_ID: "dc790e4c-3c40-4163-a41c-7ae464d05c1d"
   INGEST_ENDPOINT: "https://fluentd-activegate:9999/e/ncu51576/api/v2/logs/ingest"
   custom.properties: |
     [generic_ingest]

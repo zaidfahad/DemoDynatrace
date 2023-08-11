@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-var log = new LoggerConfiguration().WriteTo.Fluentd("https://demo81aks-dns-c64dz6f2.hcp.eastus.azmk8s.io", 443).CreateLogger();
+var log = new LoggerConfiguration().WriteTo.Fluentd("localhost", 8021).CreateLogger();
 #region Logs to Dynatrace 
 /// These are the lines
 //Log.Logger = new LoggerConfiguration().CreateBootstrapLogger();
